@@ -124,32 +124,50 @@
       <!-- PRODUCT GRID -->
       <div class="products-grid" id="productsGrid">
 
-        <!-- ========== POLYESTER REÇİNELER ========== -->
+        <!-- ========== POLİESTER REÇİNELER — YENİDEN DÜZENLEME ========== -->
 
-        <!-- 1 -->
-        <div class="product-card fade-in" data-category="polyester">
-          <div class="product-card-visual visual-polyester">
-            <div class="product-card-badge">Polyester Reçine</div>
+        <!-- ── KATEGORİ 1: TİKSOTROPİK POLİESTERLER ── -->
+        <div class="product-category-header fade-in" data-category="polyester" style="display:flex;">
+          <div class="product-cat-number">1</div>
+          <div>
+            <div class="product-cat-title">Tiksotropik <span>Polyesterler</span></div>
+          </div>
+          <span class="product-cat-desc">Dikey yüzeylerde akmaz · Düşük stiren emisyonu</span>
+        </div>
+
+        <!-- 1.1 Ortoftalik Tiksotropik -->
+        <div class="product-card fade-in stagger-1" data-category="polyester">
+          <div class="product-card-visual visual-tikso-orto">
+            <div class="product-card-badge">Tiksotropik · Ortoftalik</div>
             <svg class="card-icon" viewBox="0 0 64 64" fill="none">
-              <circle cx="32" cy="32" r="20" stroke="#0066FF" stroke-width="2" stroke-dasharray="4 3"/>
-              <path d="M20 32 Q32 18 44 32 Q32 46 20 32Z" fill="rgba(0,102,255,0.25)" stroke="#0066FF" stroke-width="1.5"/>
-              <circle cx="32" cy="32" r="5" fill="#0066FF" opacity="0.6"/>
+              <!-- Dalgalı akışkan efekti -->
+              <path d="M10 44 Q22 34 32 40 Q42 46 54 36" stroke="#0066FF" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <path d="M10 52 Q22 42 32 48 Q42 54 54 44" stroke="#0066FF" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+              <path d="M10 36 Q22 26 32 32 Q42 38 54 28" stroke="#0066FF" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.4"/>
+              <circle cx="32" cy="22" r="10" stroke="#0066FF" stroke-width="2" fill="rgba(0,102,255,0.1)"/>
+              <path d="M28 22 Q32 18 36 22" stroke="#0066FF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <circle cx="32" cy="24" r="3" fill="#0066FF" opacity="0.7"/>
             </svg>
           </div>
           <div class="product-card-body">
-            <div class="product-card-title">Genel Amaçlı Polyester Reçine</div>
-            <p class="product-card-desc">El yatırması (hand lay-up) ve elyaf püskürtme (spray-up) yöntemleriyle işlenebilen, iyi elyaf ıslatma özelliğine sahip çok amaçlı ortofetalik polyester reçine sistemi.</p>
-            <ul class="product-specs">
-              <li>Viskozite: 200–350 mPa·s (25°C)</li>
-              <li>Jel süresi: 15–25 dak (25°C, 1% MEKP)</li>
-              <li>Çekme mukavemeti: ≥55 MPa</li>
-              <li>Ambalaj: 20 kg / 200 kg / 1000 kg</li>
-            </ul>
+            <div class="product-card-title">Ortoftalik Tiksotropik Polyester</div>
+            <p class="product-card-desc">İyi mekanik özellikler, düşük stiren emisyonu. Dikey yüzeylerde akmaz — otomotiv kabinleri ve yat gövdelerinde tercih edilen tiksotropik sistem.</p>
+            <table class="tech-specs-table">
+              <tr><td>Viskozite</td><td>2.500–4.500 mPa·s (25°C)</td></tr>
+              <tr><td>Yoğunluk</td><td>1,10–1,13 g/cm³</td></tr>
+              <tr><td>Jel süresi</td><td>18–30 dak (25°C, 1% MEKP)</td></tr>
+              <tr><td>Çekme mukavemeti</td><td>≥50 MPa</td></tr>
+              <tr><td>Ambalaj</td><td>20 / 200 / 1000 kg</td></tr>
+            </table>
+            <div class="method-tags">
+              <span class="method-tag el-yatirmasi">El Yatırması</span>
+              <span class="method-tag puskurtme">Püskürtme</span>
+            </div>
             <div class="product-tags">
-              <span class="product-tag">Su Deposu</span>
-              <span class="product-tag">Tekne</span>
-              <span class="product-tag">CTP Ürünler</span>
-              <span class="product-tag">Genel İmalat</span>
+              <span class="product-tag">Otomotiv</span>
+              <span class="product-tag">Traktör Kabini</span>
+              <span class="product-tag">Yat–Tekne</span>
+              <span class="product-tag">Prefabrik</span>
             </div>
             <div class="product-card-actions">
               <a href="iletisim.html" class="btn btn-outline-blue btn-sm">
@@ -161,30 +179,37 @@
           </div>
         </div>
 
-        <!-- 2 -->
-        <div class="product-card fade-in stagger-1" data-category="polyester">
-          <div class="product-card-visual visual-polyester-iso">
-            <div class="product-card-badge">Polyester Reçine</div>
+        <!-- 1.2 İzoftalik Tiksotropik Kimyasal Dayanımlı -->
+        <div class="product-card fade-in stagger-2" data-category="polyester">
+          <div class="product-card-visual visual-tikso-iso">
+            <div class="product-card-badge">Tiksotropik · İzoftalik</div>
             <svg class="card-icon" viewBox="0 0 64 64" fill="none">
-              <hexagon/>
-              <polygon points="32,10 50,22 50,42 32,54 14,42 14,22" stroke="#0099FF" stroke-width="2" fill="rgba(0,153,255,0.1)"/>
-              <polygon points="32,18 44,26 44,38 32,46 20,38 20,26" stroke="#0099FF" stroke-width="1.5" fill="rgba(0,153,255,0.15)"/>
-              <circle cx="32" cy="32" r="5" fill="#0099FF" opacity="0.5"/>
+              <path d="M10 46 Q22 36 32 42 Q42 48 54 38" stroke="#0099FF" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <path d="M10 54 Q22 44 32 50 Q42 56 54 46" stroke="#0099FF" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+              <path d="M10 38 Q22 28 32 34 Q42 40 54 30" stroke="#0099FF" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.35"/>
+              <rect x="22" y="10" width="20" height="20" rx="5" stroke="#0099FF" stroke-width="2" fill="rgba(0,153,255,0.12)"/>
+              <path d="M27 20 h10 M32 15 v10" stroke="#0099FF" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </div>
           <div class="product-card-body">
-            <div class="product-card-title">Izopothalik Polyester Reçine</div>
-            <p class="product-card-desc">İzoftalik asit bazlı yapısıyla üstün kimyasal ve su direnci sunar. Deniz uygulamaları, kimyasal tanklar ve nemli ortam gerektiren projelerde tercih edilen premium reçine.</p>
-            <ul class="product-specs">
-              <li>Su emme oranı: &lt;0.3% (24 sa)</li>
-              <li>Kimyasal direnç: Aside ve alkale dayanıklı</li>
-              <li>HDT: ≥85°C</li>
-              <li>Ambalaj: 20 kg / 200 kg / 1000 kg</li>
-            </ul>
+            <div class="product-card-title">İzoftalik Tiksotropik Kimyasal Dayanımlı Polyester</div>
+            <span class="approval-badge">✓ Lloyd's Register Onaylı</span>
+            <p class="product-card-desc">Yüksek sıcaklık ve kimyasal dayanım. El yatırması ve püskürtme ile işlenebilen, tüp ve tanklarda yüksek performans sergileyen izoftalik tiksotropik sistem.</p>
+            <table class="tech-specs-table">
+              <tr><td>Viskozite</td><td>3.000–6.000 mPa·s (25°C)</td></tr>
+              <tr><td>Yoğunluk</td><td>1,12–1,15 g/cm³</td></tr>
+              <tr><td>HDT</td><td>≥90°C (post-kür sonrası)</td></tr>
+              <tr><td>Su emme</td><td>&lt;0,25% (24 sa)</td></tr>
+              <tr><td>Ambalaj</td><td>20 / 200 / 1000 kg</td></tr>
+            </table>
+            <div class="method-tags">
+              <span class="method-tag el-yatirmasi">El Yatırması</span>
+              <span class="method-tag puskurtme">Püskürtme</span>
+            </div>
             <div class="product-tags">
               <span class="product-tag">Kimyasal Tank</span>
-              <span class="product-tag">Denizcilik</span>
-              <span class="product-tag">Boru Hattı</span>
+              <span class="product-tag">Tüp</span>
+              <span class="product-tag">Deniz Uygulaması</span>
             </div>
             <div class="product-card-actions">
               <a href="iletisim.html" class="btn btn-outline-blue btn-sm">TDS İndir</a>
@@ -193,28 +218,321 @@
           </div>
         </div>
 
-        <!-- 3 -->
-        <div class="product-card fade-in stagger-2" data-category="polyester">
-          <div class="product-card-visual visual-vinilester">
-            <div class="product-card-badge">Polyester Reçine</div>
+        <!-- ── KATEGORİ 2: DÖKÜM TİPİ POLİESTERLER ── -->
+        <div class="product-category-header fade-in" data-category="polyester" style="display:flex;">
+          <div class="product-cat-number" style="background:var(--color-accent-orange);">2</div>
+          <div>
+            <div class="product-cat-title">Döküm Tipi <span style="color:var(--color-accent-orange)">Polyesterler</span></div>
+          </div>
+          <span class="product-cat-desc">Mermer · Küvet · Mutfak Tezgahı</span>
+        </div>
+
+        <!-- 2.1 Ortoftalik-Tereftalik Döküm -->
+        <div class="product-card fade-in stagger-1" data-category="polyester">
+          <div class="product-card-visual visual-dokum-orto">
+            <div class="product-card-badge">Döküm · Orto-Tere</div>
             <svg class="card-icon" viewBox="0 0 64 64" fill="none">
-              <path d="M32 12L52 44H12L32 12Z" stroke="#A855F7" stroke-width="2" fill="rgba(168,85,247,0.12)"/>
-              <path d="M32 20L46 42H18L32 20Z" stroke="#A855F7" stroke-width="1.5" fill="rgba(168,85,247,0.2)"/>
-              <circle cx="32" cy="36" r="4" fill="#A855F7" opacity="0.6"/>
+              <!-- Mermer doku efekti -->
+              <rect x="10" y="10" width="44" height="44" rx="6" fill="rgba(210,160,80,0.08)" stroke="rgba(210,160,80,0.4)" stroke-width="1.5"/>
+              <path d="M14 22 Q24 18 30 26 Q36 34 46 28" stroke="rgba(210,160,80,0.6)" stroke-width="1.5" fill="none"/>
+              <path d="M18 34 Q28 30 34 38 Q40 46 50 40" stroke="rgba(210,160,80,0.4)" stroke-width="1" fill="none"/>
+              <path d="M12 44 Q20 40 26 46 Q32 52 42 48" stroke="rgba(210,160,80,0.5)" stroke-width="1" fill="none"/>
+              <ellipse cx="32" cy="32" rx="12" ry="8" fill="rgba(210,160,80,0.15)" stroke="rgba(210,160,80,0.5)" stroke-width="1"/>
+              <text x="26" y="36" font-size="8" fill="rgba(210,160,80,0.8)" font-family="monospace">BAL</text>
             </svg>
           </div>
           <div class="product-card-body">
-            <div class="product-card-title">Vinilester Reçine</div>
-            <p class="product-card-desc">Epoksi ve polyester'in üstün özelliklerini birleştiren vinilester yapısı; mükemmel kimyasal direnç, yüksek çekme ve darbe mukavemeti sunar.</p>
-            <ul class="product-specs">
-              <li>Çekme mukavemeti: ≥80 MPa</li>
-              <li>Uzama oranı: 4–6%</li>
-              <li>Olağanüstü kimyasal direnç</li>
-              <li>Ambalaj: 20 kg / 200 kg</li>
-            </ul>
+            <div class="product-card-title">Ortoftalik-Tereftalik Döküm Polyester</div>
+            <p class="product-card-desc">Esnek yapısı ve yüksek dolgu kapasitesiyle berrak bal rengi sunan döküm reçinesi. Mermer, küvet ve mutfak tezgahlarında doğal taş görünümü verir.</p>
+            <table class="tech-specs-table">
+              <tr><td>Viskozite</td><td>400–800 mPa·s (25°C)</td></tr>
+              <tr><td>Yoğunluk</td><td>1,09–1,12 g/cm³</td></tr>
+              <tr><td>Renk</td><td>Berrak / Bal sarısı</td></tr>
+              <tr><td>Dolgu kapasitesi</td><td>%60–70 (ATH ile)</td></tr>
+              <tr><td>Ambalaj</td><td>20 / 200 / 1000 kg</td></tr>
+            </table>
+            <div class="method-tags">
+              <span class="method-tag dokum">Döküm</span>
+            </div>
             <div class="product-tags">
+              <span class="product-tag">Mermer</span>
+              <span class="product-tag">Küvet</span>
+              <span class="product-tag">Lavabo</span>
+              <span class="product-tag">Mutfak Tezgahı</span>
+              <span class="product-tag">Süs Eşyası</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">TDS İndir</a>
+              <a href="iletisim.html" class="btn btn-orange btn-sm">Teklif Al</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2.2 İzoftalik Masif Yüzey Döküm -->
+        <div class="product-card fade-in stagger-2" data-category="polyester">
+          <div class="product-card-visual visual-dokum-iso">
+            <div class="product-card-badge">Döküm · Masif Yüzey</div>
+            <svg class="card-icon" viewBox="0 0 64 64" fill="none">
+              <rect x="10" y="10" width="44" height="44" rx="6" fill="rgba(180,140,60,0.08)" stroke="rgba(180,140,60,0.4)" stroke-width="1.5"/>
+              <path d="M16 20 Q26 16 32 24 Q38 32 48 26" stroke="rgba(180,140,60,0.7)" stroke-width="2" fill="none"/>
+              <path d="M14 32 Q24 28 30 36 Q36 44 46 38" stroke="rgba(180,140,60,0.4)" stroke-width="1.5" fill="none"/>
+              <path d="M18 44 Q28 40 34 46 Q40 52 50 46" stroke="rgba(180,140,60,0.5)" stroke-width="1" fill="none"/>
+              <circle cx="32" cy="32" r="9" fill="rgba(180,140,60,0.12)" stroke="rgba(180,140,60,0.5)" stroke-width="1.5"/>
+              <path d="M28 32 h8 M32 28 v8" stroke="rgba(180,140,60,0.7)" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-title">İzoftalik Masif Yüzey Döküm Polyester</div>
+            <p class="product-card-desc">Yüksek UV, kimyasal ve ısı dayanımıyla premium döküm uygulamaları için geliştirilmiş izoftalik sistem. Banyo ve mutfak yüzeylerinde uzun ömür sağlar.</p>
+            <table class="tech-specs-table">
+              <tr><td>Viskozite</td><td>500–900 mPa·s (25°C)</td></tr>
+              <tr><td>Yoğunluk</td><td>1,11–1,14 g/cm³</td></tr>
+              <tr><td>HDT</td><td>≥80°C</td></tr>
+              <tr><td>UV dayanımı</td><td>Yüksek (stabilizatörlü)</td></tr>
+              <tr><td>Ambalaj</td><td>20 / 200 / 1000 kg</td></tr>
+            </table>
+            <div class="method-tags">
+              <span class="method-tag dokum">Döküm</span>
+            </div>
+            <div class="product-tags">
+              <span class="product-tag">Banyo</span>
+              <span class="product-tag">Mutfak Tezgahı</span>
+              <span class="product-tag">Döküm Ürünler</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">TDS İndir</a>
+              <a href="iletisim.html" class="btn btn-orange btn-sm">Teklif Al</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── KATEGORİ 3: GENEL AMAÇLI POLİESTERLER (CTP) ── -->
+        <div class="product-category-header fade-in" data-category="polyester" style="display:flex;">
+          <div class="product-cat-number" style="background:#0EA5E9;">3</div>
+          <div>
+            <div class="product-cat-title">Genel Amaçlı <span style="color:#0EA5E9;">Polyesterler (CTP)</span></div>
+          </div>
+          <span class="product-cat-desc">Su Deposu · Tekne · CTP Ürünler</span>
+        </div>
+
+        <!-- 3.1 Ortoftalik Genel Amaçlı -->
+        <div class="product-card fade-in stagger-1" data-category="polyester">
+          <div class="product-card-visual visual-genel-orto">
+            <div class="product-card-badge">Genel Amaçlı · CTP</div>
+            <svg class="card-icon" viewBox="0 0 64 64" fill="none">
+              <!-- Reçine damlası efekti -->
+              <path d="M32 10 Q44 26 44 36 Q44 50 32 54 Q20 50 20 36 Q20 26 32 10Z" fill="rgba(0,102,255,0.15)" stroke="#0066FF" stroke-width="2"/>
+              <path d="M32 18 Q40 28 40 36 Q40 46 32 49 Q24 46 24 36 Q24 28 32 18Z" fill="rgba(0,102,255,0.1)" stroke="#0066FF" stroke-width="1" opacity="0.7"/>
+              <ellipse cx="29" cy="34" rx="4" ry="6" fill="rgba(255,255,255,0.12)" transform="rotate(-20 29 34)"/>
+            </svg>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-title">Ortoftalik Genel Amaçlı Polyester</div>
+            <p class="product-card-desc">Orta reaktivite, düşük viskozite ve iyi elyaf ıslatma özelliğiyle geniş kullanım alanına sahip CTP reçinesi. Düşük hacimsel çekme ile boyutsal kararlılık sağlar.</p>
+            <table class="tech-specs-table">
+              <tr><td>Viskozite</td><td>200–350 mPa·s (25°C)</td></tr>
+              <tr><td>Yoğunluk</td><td>1,10–1,13 g/cm³</td></tr>
+              <tr><td>Jel süresi</td><td>15–25 dak (25°C, 1% MEKP)</td></tr>
+              <tr><td>Çekme mukavemeti</td><td>≥55 MPa</td></tr>
+              <tr><td>Ambalaj</td><td>20 / 200 / 1000 kg</td></tr>
+            </table>
+            <div class="method-tags">
+              <span class="method-tag el-yatirmasi">El Yatırması</span>
+              <span class="method-tag puskurtme">Püskürtme</span>
+            </div>
+            <div class="product-tags">
+              <span class="product-tag">Su Deposu</span>
+              <span class="product-tag">Tekne</span>
+              <span class="product-tag">CTP Ürünler</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">TDS İndir</a>
+              <a href="iletisim.html" class="btn btn-orange btn-sm">Teklif Al</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3.2 İzoftalik / ISO-NPG Marin -->
+        <div class="product-card fade-in stagger-2" data-category="polyester">
+          <div class="product-card-visual visual-genel-iso">
+            <div class="product-card-badge">İzo-NPG · Marin Tipi</div>
+            <svg class="card-icon" viewBox="0 0 64 64" fill="none">
+              <path d="M32 10 Q46 28 46 38 Q46 52 32 56 Q18 52 18 38 Q18 28 32 10Z" fill="rgba(0,153,255,0.15)" stroke="#0099FF" stroke-width="2"/>
+              <path d="M32 20 Q42 30 42 38 Q42 48 32 51 Q22 48 22 38 Q22 30 32 20Z" fill="rgba(0,153,255,0.1)" stroke="#0099FF" stroke-width="1" opacity="0.8"/>
+              <path d="M26 24 Q30 20 34 24" stroke="#0099FF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <ellipse cx="28" cy="35" rx="4" ry="7" fill="rgba(255,255,255,0.1)" transform="rotate(-15 28 35)"/>
+            </svg>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-title">İzoftalik / ISO-NPG Marin Tipi Polyester</div>
+            <span class="approval-badge">✓ Lloyd's Register Onaylı</span>
+            <p class="product-card-desc">Üstün su ve kimyasal direnç, yüksek mekanik değerler. Tekne, yat ve katamaran gövdelerinin iç ve dış laminasyonunda sektörün tercihi.</p>
+            <table class="tech-specs-table">
+              <tr><td>Viskozite</td><td>250–450 mPa·s (25°C)</td></tr>
+              <tr><td>Yoğunluk</td><td>1,12–1,15 g/cm³</td></tr>
+              <tr><td>Su emme</td><td>&lt;0,20% (24 sa)</td></tr>
+              <tr><td>Çekme mukavemeti</td><td>≥65 MPa</td></tr>
+              <tr><td>Ambalaj</td><td>20 / 200 / 1000 kg</td></tr>
+            </table>
+            <div class="method-tags">
+              <span class="method-tag el-yatirmasi">El Yatırması</span>
+              <span class="method-tag puskurtme">Püskürtme</span>
+              <span class="method-tag rtm">RTM</span>
+            </div>
+            <div class="product-tags">
+              <span class="product-tag">Tekne</span>
+              <span class="product-tag">Yat</span>
+              <span class="product-tag">Katamaran</span>
+              <span class="product-tag">Deniz</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">TDS İndir</a>
+              <a href="iletisim.html" class="btn btn-orange btn-sm">Teklif Al</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── KATEGORİ 4: BORU & TANK TİPİ POLİESTERLER ── -->
+        <div class="product-category-header fade-in" data-category="polyester" style="display:flex;">
+          <div class="product-cat-number" style="background:#6B7280;">4</div>
+          <div>
+            <div class="product-cat-title">Boru &amp; Tank Tipi <span style="color:#9CA3AF;">Polyesterler</span></div>
+          </div>
+          <span class="product-cat-desc">Fitil Sarma · CTP Boru · Kimyasal Tank</span>
+        </div>
+
+        <!-- 4.1 Ortoftalik Fitil Sarma -->
+        <div class="product-card fade-in stagger-1" data-category="polyester">
+          <div class="product-card-visual visual-boru-orto">
+            <div class="product-card-badge">Boru &amp; Tank · Ortoftalik</div>
+            <svg class="card-icon" viewBox="0 0 64 64" fill="none">
+              <!-- Silindirik boru efekti -->
+              <ellipse cx="32" cy="18" rx="18" ry="7" fill="rgba(160,160,160,0.1)" stroke="rgba(160,160,160,0.5)" stroke-width="1.5"/>
+              <rect x="14" y="18" width="36" height="28" fill="rgba(160,160,160,0.08)" stroke="rgba(160,160,160,0.4)" stroke-width="1.5"/>
+              <ellipse cx="32" cy="46" rx="18" ry="7" fill="rgba(160,160,160,0.15)" stroke="rgba(160,160,160,0.5)" stroke-width="1.5"/>
+              <!-- Sarma çizgisi -->
+              <path d="M14 24 Q32 20 50 24" stroke="rgba(160,160,160,0.3)" stroke-width="1" fill="none"/>
+              <path d="M14 30 Q32 26 50 30" stroke="rgba(160,160,160,0.3)" stroke-width="1" fill="none"/>
+              <path d="M14 36 Q32 32 50 36" stroke="rgba(160,160,160,0.3)" stroke-width="1" fill="none"/>
+              <path d="M14 42 Q32 38 50 42" stroke="rgba(160,160,160,0.3)" stroke-width="1" fill="none"/>
+            </svg>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-title">Ortoftalik Fitil Sarma Polyester</div>
+            <p class="product-card-desc">Tiksotropiksiz, orta reaktif formülasyon. Yüksek elyaf ıslatma özelliğiyle fitil sarma makinelerinde kesintisiz üretim için optimize edilmiştir.</p>
+            <table class="tech-specs-table">
+              <tr><td>Viskozite</td><td>150–300 mPa·s (25°C)</td></tr>
+              <tr><td>Yoğunluk</td><td>1,09–1,12 g/cm³</td></tr>
+              <tr><td>Jel süresi</td><td>20–35 dak (25°C, 1% MEKP)</td></tr>
+              <tr><td>Elyaf ıslatma</td><td>Mükemmel</td></tr>
+              <tr><td>Ambalaj</td><td>200 / 1000 kg (IBC)</td></tr>
+            </table>
+            <div class="method-tags">
+              <span class="method-tag fitil-sarma">Fitil Sarma</span>
+            </div>
+            <div class="product-tags">
+              <span class="product-tag">CTP Boru</span>
+              <span class="product-tag">Tank</span>
+              <span class="product-tag">Silindirik Yapı</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">TDS İndir</a>
+              <a href="iletisim.html" class="btn btn-orange btn-sm">Teklif Al</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4.2 İzoftalik Kimyasal Dayanımlı Tank -->
+        <div class="product-card fade-in stagger-2" data-category="polyester">
+          <div class="product-card-visual visual-boru-iso">
+            <div class="product-card-badge">Tank · İzoftalik</div>
+            <svg class="card-icon" viewBox="0 0 64 64" fill="none">
+              <ellipse cx="32" cy="16" rx="18" ry="6" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.4)" stroke-width="1.5"/>
+              <rect x="14" y="16" width="36" height="32" fill="rgba(34,197,94,0.06)" stroke="rgba(34,197,94,0.35)" stroke-width="1.5"/>
+              <ellipse cx="32" cy="48" rx="18" ry="6" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.4)" stroke-width="1.5"/>
+              <path d="M14 24 Q32 20 50 24" stroke="rgba(34,197,94,0.25)" stroke-width="1" fill="none"/>
+              <path d="M14 32 Q32 28 50 32" stroke="rgba(34,197,94,0.25)" stroke-width="1" fill="none"/>
+              <path d="M14 40 Q32 36 50 40" stroke="rgba(34,197,94,0.25)" stroke-width="1" fill="none"/>
+              <!-- Kimyasal direnci simgeleyen kalkan -->
+              <path d="M26 26 L32 22 L38 26 L38 34 Q32 38 26 34 Z" stroke="rgba(34,197,94,0.6)" stroke-width="1.5" fill="rgba(34,197,94,0.1)"/>
+            </svg>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-title">İzoftalik Kimyasal Dayanımlı Tank Polyester</div>
+            <p class="product-card-desc">Asit ve alkali direnci, yüksek mekanik özellikler. Kimyasal tanklar, fuel oil depoları, su ve gıda depolarında güvenle kullanılır.</p>
+            <table class="tech-specs-table">
+              <tr><td>Viskozite</td><td>200–400 mPa·s (25°C)</td></tr>
+              <tr><td>Yoğunluk</td><td>1,11–1,14 g/cm³</td></tr>
+              <tr><td>HDT</td><td>≥88°C</td></tr>
+              <tr><td>Kimyasal direnç</td><td>Asit + Alkali</td></tr>
+              <tr><td>Ambalaj</td><td>200 / 1000 kg (IBC)</td></tr>
+            </table>
+            <div class="method-tags">
+              <span class="method-tag fitil-sarma">Fitil Sarma</span>
+              <span class="method-tag el-yatirmasi">El Yatırması</span>
+            </div>
+            <div class="product-tags">
+              <span class="product-tag">Kimyasal Tank</span>
+              <span class="product-tag">Fuel Oil</span>
+              <span class="product-tag">Su Deposu</span>
+              <span class="product-tag">Gıda Deposu</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">TDS İndir</a>
+              <a href="iletisim.html" class="btn btn-orange btn-sm">Teklif Al</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── KATEGORİ 5: VİNİLESTER REÇİNELER ── -->
+        <div class="product-category-header fade-in" data-category="polyester" style="display:flex;">
+          <div class="product-cat-number" style="background:#7C3AED;">5</div>
+          <div>
+            <div class="product-cat-title">Vinilester <span style="color:#A78BFA;">Reçineler</span></div>
+          </div>
+          <span class="product-cat-desc">Epoksi bazlı · Maksimum kimyasal dayanım</span>
+        </div>
+
+        <!-- 5.1 Standart Vinilester -->
+        <div class="product-card fade-in stagger-1" data-category="polyester">
+          <div class="product-card-visual visual-vinilester-std">
+            <div class="product-card-badge">Vinilester · Standart</div>
+            <svg class="card-icon" viewBox="0 0 64 64" fill="none">
+              <!-- Molekül efekti -->
+              <circle cx="32" cy="32" r="7" fill="rgba(167,139,250,0.25)" stroke="#A78BFA" stroke-width="2"/>
+              <circle cx="14" cy="22" r="4" fill="rgba(167,139,250,0.15)" stroke="#A78BFA" stroke-width="1.5"/>
+              <circle cx="50" cy="22" r="4" fill="rgba(167,139,250,0.15)" stroke="#A78BFA" stroke-width="1.5"/>
+              <circle cx="14" cy="42" r="4" fill="rgba(167,139,250,0.15)" stroke="#A78BFA" stroke-width="1.5"/>
+              <circle cx="50" cy="42" r="4" fill="rgba(167,139,250,0.15)" stroke="#A78BFA" stroke-width="1.5"/>
+              <circle cx="32" cy="12" r="3" fill="rgba(167,139,250,0.2)" stroke="#A78BFA" stroke-width="1.5"/>
+              <circle cx="32" cy="52" r="3" fill="rgba(167,139,250,0.2)" stroke="#A78BFA" stroke-width="1.5"/>
+              <line x1="32" y1="25" x2="32" y2="15" stroke="#A78BFA" stroke-width="1.5"/>
+              <line x1="32" y1="39" x2="32" y2="49" stroke="#A78BFA" stroke-width="1.5"/>
+              <line x1="25" y1="28" x2="18" y2="24" stroke="#A78BFA" stroke-width="1.5"/>
+              <line x1="39" y1="28" x2="46" y2="24" stroke="#A78BFA" stroke-width="1.5"/>
+              <line x1="25" y1="36" x2="18" y2="40" stroke="#A78BFA" stroke-width="1.5"/>
+              <line x1="39" y1="36" x2="46" y2="40" stroke="#A78BFA" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-title">Standart Vinilester Reçine</div>
+            <p class="product-card-desc">Epoksi bazlı yapısıyla polyester'in işlenebilirliğini epoksinin kimyasal ve mekanik üstünlüğüyle birleştirir. Endüstriyel ekipman ve yüksek performanslı kompozitlerde birinci tercih.</p>
+            <table class="tech-specs-table">
+              <tr><td>Viskozite</td><td>300–600 mPa·s (25°C)</td></tr>
+              <tr><td>Yoğunluk</td><td>1,04–1,07 g/cm³</td></tr>
+              <tr><td>Çekme mukavemeti</td><td>≥80 MPa</td></tr>
+              <tr><td>Uzama oranı</td><td>4–6%</td></tr>
+              <tr><td>Ambalaj</td><td>20 / 200 / 1000 kg</td></tr>
+            </table>
+            <div class="method-tags">
+              <span class="method-tag el-yatirmasi">El Yatırması</span>
+              <span class="method-tag puskurtme">Püskürtme</span>
+              <span class="method-tag infuzyon">İnfüzyon</span>
+              <span class="method-tag fitil-sarma">Fitil Sarma</span>
+            </div>
+            <div class="product-tags">
+              <span class="product-tag">Endüstriyel Ekipman</span>
               <span class="product-tag">Kimyasal Taşıma</span>
-              <span class="product-tag">Endüstriyel</span>
               <span class="product-tag">Yüksek Performans</span>
             </div>
             <div class="product-card-actions">

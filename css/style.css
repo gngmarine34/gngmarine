@@ -2304,3 +2304,175 @@ textarea.form-control {
   .product-card { break-inside: avoid; border: 1px solid #ddd; }
   .section { padding-block: 32px; }
 }
+
+/* ============================================================
+   PRODUCT CATEGORY HEADERS
+   ============================================================ */
+.product-category-header {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 48px;
+  margin-bottom: 8px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-border);
+}
+.product-category-header:first-of-type { margin-top: 0; }
+
+.product-cat-number {
+  width: 32px; height: 32px;
+  border-radius: 8px;
+  background: var(--color-accent-blue);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 0 12px rgba(0,102,255,0.4);
+}
+
+.product-cat-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+.product-cat-title span {
+  color: var(--color-accent-blue);
+}
+
+.product-cat-desc {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+/* ============================================================
+   TECH SPECS TABLE inside product cards
+   ============================================================ */
+.tech-specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 14px;
+  font-size: 0.78rem;
+}
+.tech-specs-table tr {
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.tech-specs-table tr:last-child { border-bottom: none; }
+.tech-specs-table td {
+  padding: 5px 0;
+  vertical-align: top;
+  line-height: 1.4;
+}
+.tech-specs-table td:first-child {
+  color: var(--color-text-muted);
+  width: 48%;
+  padding-right: 8px;
+}
+.tech-specs-table td:last-child {
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+/* ============================================================
+   APPLICATION METHOD TAGS
+   ============================================================ */
+.method-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 16px;
+}
+.method-tag {
+  font-family: var(--font-heading);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 100px;
+  border: 1px solid;
+}
+.method-tag.el-yatirmasi {
+  color: #60A5FA;
+  border-color: rgba(96,165,250,0.3);
+  background: rgba(96,165,250,0.08);
+}
+.method-tag.puskurtme {
+  color: #34D399;
+  border-color: rgba(52,211,153,0.3);
+  background: rgba(52,211,153,0.08);
+}
+.method-tag.rtm {
+  color: #F59E0B;
+  border-color: rgba(245,158,11,0.3);
+  background: rgba(245,158,11,0.08);
+}
+.method-tag.infuzyon {
+  color: #A78BFA;
+  border-color: rgba(167,139,250,0.3);
+  background: rgba(167,139,250,0.08);
+}
+.method-tag.fitil-sarma {
+  color: #FB923C;
+  border-color: rgba(251,146,60,0.3);
+  background: rgba(251,146,60,0.08);
+}
+.method-tag.dokum {
+  color: #F472B6;
+  border-color: rgba(244,114,182,0.3);
+  background: rgba(244,114,182,0.08);
+}
+
+/* approval badge */
+.approval-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.7rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #22C55E;
+  background: rgba(34,197,94,0.1);
+  border: 1px solid rgba(34,197,94,0.25);
+  padding: 3px 9px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  display: inline-flex;
+}
+
+/* Visual backgrounds for new categories */
+.visual-tikso-orto {
+  background: linear-gradient(160deg, #060D1F 0%, #091A3A 40%, #0A1628 70%, #061220 100%);
+}
+.visual-tikso-iso {
+  background: linear-gradient(160deg, #060F25 0%, #0A1E45 45%, #081830 100%);
+}
+.visual-dokum-orto {
+  background: linear-gradient(160deg, #1A1208 0%, #2D1F0A 45%, #1E1508 100%);
+}
+.visual-dokum-iso {
+  background: linear-gradient(160deg, #14100A 0%, #241A0C 45%, #1A1208 100%);
+}
+.visual-genel-orto {
+  background: linear-gradient(160deg, #060F1F 0%, #0A1830 45%, #07111F 100%);
+}
+.visual-genel-iso {
+  background: linear-gradient(160deg, #061520 0%, #0A2035 45%, #061620 100%);
+}
+.visual-boru-orto {
+  background: linear-gradient(160deg, #111212 0%, #1C1E1E 45%, #141515 100%);
+}
+.visual-boru-iso {
+  background: linear-gradient(160deg, #0E1510 0%, #162018 45%, #0E1510 100%);
+}
+.visual-vinilester-std {
+  background: linear-gradient(160deg, #0E0A18 0%, #1A1030 45%, #0E0A18 100%);
+}
