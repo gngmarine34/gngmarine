@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Sayfa Bulunamadı | KompozitPro</title>
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      padding: 40px 24px;
+    }
+    .error-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 60% at 50% 30%, rgba(0,102,255,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 80% 70%, rgba(255,107,0,0.08) 0%, transparent 50%),
+        var(--color-bg-primary);
+    }
+    .error-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,102,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,102,255,0.05) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .error-content {
+      position: relative;
+      z-index: 1;
+      max-width: 560px;
+    }
+    .error-number {
+      font-family: var(--font-heading);
+      font-size: clamp(8rem, 20vw, 14rem);
+      font-weight: 700;
+      line-height: 1;
+      background: linear-gradient(135deg, rgba(0,102,255,0.15), rgba(0,102,255,0.05));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      position: relative;
+      margin-bottom: -16px;
+      letter-spacing: -0.04em;
+    }
+    .error-number::after {
+      content: '404';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--color-accent-blue), #4DA6FF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      opacity: 0.25;
+      filter: blur(2px);
+    }
+    .error-icon {
+      font-size: 3rem;
+      margin-bottom: 24px;
+      display: block;
+      animation: floatIcon 3s ease-in-out infinite;
+    }
+    @keyframes floatIcon {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+    .error-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 14px;
+    }
+    .error-desc {
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+    .error-actions {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .error-nav {
+      margin-top: 56px;
+      padding-top: 40px;
+      border-top: 1px solid var(--color-border);
+    }
+    .error-nav-title {
+      font-family: var(--font-heading);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      margin-bottom: 20px;
+    }
+    .error-nav-links {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .error-nav-link {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: 10px 18px;
+      font-family: var(--font-heading);
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      transition: all var(--transition-fast);
+    }
+    .error-nav-link:hover {
+      border-color: var(--color-accent-blue);
+      color: var(--color-accent-blue);
+      transform: translateY(-2px);
+    }
+
+    /* Animated particles */
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      animation: drift linear infinite;
+      opacity: 0;
+    }
+    @keyframes drift {
+      0%   { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+      10%  { opacity: 0.6; }
+      90%  { opacity: 0.6; }
+      100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body class="dot-bg">
+
+  <!-- Particles -->
+  <div id="particles" style="position:fixed;inset:0;pointer-events:none;z-index:0;"></div>
+
+  <nav class="navbar scrolled">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-logo">
+        <div class="logo-mark">KP</div>
+        <span class="logo-text">Kompozit<span>Pro</span></span>
+      </a>
+    </div>
+  </nav>
+
+  <div class="error-page">
+    <div class="error-bg"></div>
+    <div class="error-content">
+      <div class="error-number">404</div>
+      <span class="error-icon">⚗️</span>
+      <h1 class="error-title">Reçine Bulunamadı!</h1>
+      <p class="error-desc">
+        Aradığınız sayfa artık mevcut değil, taşınmış ya da hiç var olmamış olabilir.
+        Kür görmemiş bir laminat gibi — henüz şekillenmemiş. Ana sayfaya dönerek doğru yolu bulabilirsiniz.
+      </p>
+      <div class="error-actions">
+        <a href="index.html" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3L3 8l5 5M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Ana Sayfaya Dön
+        </a>
+        <a href="iletisim.html" class="btn btn-secondary">Bize Ulaşın</a>
+      </div>
+
+      <div class="error-nav">
+        <p class="error-nav-title">Popüler Sayfalar</p>
+        <div class="error-nav-links">
+          <a href="urunler.html" class="error-nav-link">🧪 Ürünler</a>
+          <a href="uygulama-alanlari.html" class="error-nav-link">🏭 Uygulama Alanları</a>
+          <a href="hakkimizda.html" class="error-nav-link">🏢 Hakkımızda</a>
+          <a href="iletisim.html" class="error-nav-link">📞 İletişim</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Generate floating particles
+    var container = document.getElementById('particles');
+    var colors = ['rgba(0,102,255,0.4)', 'rgba(255,107,0,0.3)', 'rgba(0,102,255,0.2)', 'rgba(255,107,0,0.2)'];
+    for (var i = 0; i < 18; i++) {
+      var p = document.createElement('div');
+      p.className = 'particle';
+      var size = Math.random() * 8 + 3;
+      p.style.cssText = [
+        'width:' + size + 'px',
+        'height:' + size + 'px',
+        'left:' + Math.random() * 100 + '%',
+        'background:' + colors[Math.floor(Math.random() * colors.length)],
+        'animation-duration:' + (Math.random() * 12 + 8) + 's',
+        'animation-delay:' + (Math.random() * 8) + 's',
+      ].join(';');
+      container.appendChild(p);
+    }
+  </script>
+</body>
+</html>
