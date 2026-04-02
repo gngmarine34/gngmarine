@@ -2476,3 +2476,236 @@ textarea.form-control {
 .visual-vinilester-std {
   background: linear-gradient(160deg, #0E0A18 0%, #1A1030 45%, #0E0A18 100%);
 }
+
+/* ============================================================
+   POLYESTER PREMIUM E-COMMERCE REDESIGN (2026)
+   ============================================================ */
+
+/* --- Category Banner --- */
+.poly-cat-banner {
+  grid-column: 1 / -1;
+  border-radius: 14px;
+  margin: 52px 0 4px;
+  position: relative;
+  overflow: hidden;
+  border-left: 3px solid;
+}
+.poly-cat-banner:first-child,
+.poly-cat-banner:first-of-type { margin-top: 0; }
+
+.poly-cat-banner-bg {
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+}
+
+.poly-cat-banner-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 18px 28px;
+}
+
+.poly-cat-num {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.06em;
+  opacity: 0.28;
+  min-width: 60px;
+  flex-shrink: 0;
+}
+
+.poly-cat-texts { flex: 1; min-width: 0; }
+
+.poly-cat-name {
+  font-family: var(--font-heading);
+  font-size: 1.0rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.poly-cat-sub {
+  font-size: 0.77rem;
+  opacity: 0.62;
+  margin-top: 4px;
+  letter-spacing: 0.015em;
+}
+
+.poly-cat-pill {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 100px;
+  border: 1px solid;
+  opacity: 0.7;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Category color themes */
+.poly-cat-1 { color: #3B82F6; border-left-color: #3B82F6; }
+.poly-cat-1 .poly-cat-banner-bg {
+  background: linear-gradient(135deg, rgba(59,130,246,0.14) 0%, rgba(59,130,246,0.05) 55%, rgba(59,130,246,0.01) 100%);
+}
+.poly-cat-1 .poly-cat-pill { border-color: rgba(59,130,246,0.45); }
+
+.poly-cat-2 { color: #D97706; border-left-color: #D97706; }
+.poly-cat-2 .poly-cat-banner-bg {
+  background: linear-gradient(135deg, rgba(217,119,6,0.14) 0%, rgba(217,119,6,0.05) 55%, rgba(217,119,6,0.01) 100%);
+}
+.poly-cat-2 .poly-cat-pill { border-color: rgba(217,119,6,0.45); }
+
+.poly-cat-3 { color: #0EA5E9; border-left-color: #0EA5E9; }
+.poly-cat-3 .poly-cat-banner-bg {
+  background: linear-gradient(135deg, rgba(14,165,233,0.14) 0%, rgba(14,165,233,0.05) 55%, rgba(14,165,233,0.01) 100%);
+}
+.poly-cat-3 .poly-cat-pill { border-color: rgba(14,165,233,0.45); }
+
+.poly-cat-4 { color: #94A3B8; border-left-color: #94A3B8; }
+.poly-cat-4 .poly-cat-banner-bg {
+  background: linear-gradient(135deg, rgba(148,163,184,0.12) 0%, rgba(148,163,184,0.04) 55%, rgba(148,163,184,0.01) 100%);
+}
+.poly-cat-4 .poly-cat-pill { border-color: rgba(148,163,184,0.4); }
+
+.poly-cat-5 { color: #8B5CF6; border-left-color: #8B5CF6; }
+.poly-cat-5 .poly-cat-banner-bg {
+  background: linear-gradient(135deg, rgba(139,92,246,0.15) 0%, rgba(139,92,246,0.05) 55%, rgba(139,92,246,0.01) 100%);
+}
+.poly-cat-5 .poly-cat-pill { border-color: rgba(139,92,246,0.45); }
+
+/* --- Stock indicator --- */
+.stock-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-heading);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #22C55E;
+  margin-bottom: 8px;
+}
+.stock-pulse {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #22C55E;
+  box-shadow: 0 0 0 0 rgba(34,197,94,0.5);
+  animation: stock-pulse-anim 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+@keyframes stock-pulse-anim {
+  0%   { box-shadow: 0 0 0 0 rgba(34,197,94,0.5); }
+  70%  { box-shadow: 0 0 0 5px rgba(34,197,94,0); }
+  100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); }
+}
+
+/* --- Product card hover lift --- */
+.product-card {
+  transition: transform 0.22s cubic-bezier(0.22,0.68,0,1.2),
+              box-shadow 0.22s ease,
+              border-color 0.22s ease;
+  will-change: transform;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.32);
+}
+.product-card[data-category="polyester"]:hover {
+  border-color: rgba(0,102,255,0.28);
+}
+
+/* --- Enhanced visual area height --- */
+.product-card .product-card-visual { height: 164px; }
+
+/* --- Multi-layer gradient visual backgrounds (overrides previous) --- */
+.visual-tikso-orto {
+  background:
+    radial-gradient(ellipse 70% 55% at 28% 65%, rgba(0,102,255,0.22) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 35% at 80% 20%, rgba(0,60,180,0.14) 0%, transparent 55%),
+    radial-gradient(ellipse 30% 30% at 50% 88%, rgba(0,30,100,0.18) 0%, transparent 60%),
+    linear-gradient(160deg, #060D1F 0%, #091A3A 50%, #061220 100%);
+}
+.visual-tikso-iso {
+  background:
+    radial-gradient(ellipse 65% 55% at 25% 60%, rgba(0,153,255,0.24) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 35% at 85% 20%, rgba(0,90,220,0.14) 0%, transparent 55%),
+    radial-gradient(ellipse 35% 30% at 50% 88%, rgba(0,40,130,0.18) 0%, transparent 60%),
+    linear-gradient(160deg, #060F25 0%, #0A1E45 50%, #081830 100%);
+}
+.visual-dokum-orto {
+  background:
+    radial-gradient(ellipse 70% 55% at 35% 65%, rgba(220,165,55,0.22) 0%, transparent 65%),
+    radial-gradient(ellipse 45% 35% at 85% 18%, rgba(160,105,20,0.14) 0%, transparent 55%),
+    radial-gradient(ellipse 35% 30% at 55% 85%, rgba(180,120,30,0.16) 0%, transparent 60%),
+    linear-gradient(160deg, #1A1208 0%, #2D200A 50%, #1C1408 100%);
+}
+.visual-dokum-iso {
+  background:
+    radial-gradient(ellipse 65% 50% at 32% 62%, rgba(200,150,45,0.2) 0%, transparent 65%),
+    radial-gradient(ellipse 42% 34% at 82% 20%, rgba(150,95,18,0.14) 0%, transparent 55%),
+    radial-gradient(ellipse 32% 28% at 52% 88%, rgba(165,110,25,0.16) 0%, transparent 58%),
+    linear-gradient(160deg, #14100A 0%, #24190C 50%, #1A1208 100%);
+}
+.visual-genel-orto {
+  background:
+    radial-gradient(ellipse 60% 65% at 50% 55%, rgba(0,120,255,0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 35% 35% at 80% 18%, rgba(0,80,210,0.12) 0%, transparent 55%),
+    radial-gradient(ellipse 30% 25% at 20% 80%, rgba(0,60,180,0.12) 0%, transparent 55%),
+    linear-gradient(160deg, #060F1F 0%, #0A1830 50%, #07101E 100%);
+}
+.visual-genel-iso {
+  background:
+    radial-gradient(ellipse 60% 65% at 50% 55%, rgba(0,140,255,0.2) 0%, transparent 60%),
+    radial-gradient(ellipse 35% 35% at 80% 18%, rgba(0,100,220,0.14) 0%, transparent 55%),
+    radial-gradient(ellipse 30% 28% at 20% 80%, rgba(0,70,200,0.12) 0%, transparent 55%),
+    linear-gradient(160deg, #061520 0%, #0A2038 50%, #06161F 100%);
+}
+.visual-boru-orto {
+  background:
+    radial-gradient(ellipse 70% 45% at 50% 50%, rgba(160,170,185,0.14) 0%, transparent 65%),
+    radial-gradient(ellipse 35% 30% at 15% 75%, rgba(120,130,145,0.1) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 25% at 85% 22%, rgba(140,150,165,0.1) 0%, transparent 55%),
+    linear-gradient(160deg, #101213 0%, #1C1F20 50%, #131516 100%);
+}
+.visual-boru-iso {
+  background:
+    radial-gradient(ellipse 65% 50% at 50% 52%, rgba(34,197,94,0.15) 0%, transparent 65%),
+    radial-gradient(ellipse 35% 30% at 15% 75%, rgba(22,150,65,0.1) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 25% at 82% 20%, rgba(25,160,70,0.1) 0%, transparent 55%),
+    linear-gradient(160deg, #0C1410 0%, #15201A 50%, #0D1511 100%);
+}
+.visual-vinilester-std {
+  background:
+    radial-gradient(ellipse 65% 60% at 50% 52%, rgba(139,92,246,0.22) 0%, transparent 60%),
+    radial-gradient(ellipse 35% 30% at 80% 18%, rgba(100,60,220,0.14) 0%, transparent 55%),
+    radial-gradient(ellipse 30% 28% at 18% 78%, rgba(120,70,230,0.12) 0%, transparent 55%),
+    linear-gradient(160deg, #0E0A18 0%, #1C1035 50%, #0D091A 100%);
+}
+
+/* --- TDS button style --- */
+.btn-outline-blue {
+  border: 1px solid rgba(0,102,255,0.35);
+  color: var(--color-accent-blue);
+  background: rgba(0,102,255,0.06);
+  transition: all var(--transition-fast);
+}
+.btn-outline-blue:hover {
+  background: rgba(0,102,255,0.14);
+  border-color: rgba(0,102,255,0.65);
+}
+
+@media (max-width: 640px) {
+  .poly-cat-sub { display: none; }
+  .poly-cat-num { font-size: 2rem; min-width: 44px; }
+  .poly-cat-banner-inner { padding: 14px 18px; gap: 14px; }
+}

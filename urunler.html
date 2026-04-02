@@ -124,15 +124,21 @@
       <!-- PRODUCT GRID -->
       <div class="products-grid" id="productsGrid">
 
-        <!-- ========== POLİESTER REÇİNELER — YENİDEN DÜZENLEME ========== -->
+        <!-- ═══════════════════════════════════════════════════════
+             POLİESTER REÇİNELER — PREMİUM E-TİCARET TASARIMI
+             ═══════════════════════════════════════════════════════ -->
 
         <!-- ── KATEGORİ 1: TİKSOTROPİK POLİESTERLER ── -->
-        <div class="product-category-header fade-in" data-category="polyester" style="display:flex;">
-          <div class="product-cat-number">1</div>
-          <div>
-            <div class="product-cat-title">Tiksotropik <span>Polyesterler</span></div>
+        <div class="poly-cat-banner poly-cat-1 fade-in" data-category="polyester">
+          <div class="poly-cat-banner-bg"></div>
+          <div class="poly-cat-banner-inner">
+            <div class="poly-cat-num">01</div>
+            <div class="poly-cat-texts">
+              <div class="poly-cat-name">Tiksotropik Polyesterler</div>
+              <div class="poly-cat-sub">Dikey yüzeylerde akmaz · Düşük stiren emisyonu · El Yatırması &amp; Püskürtme uyumlu</div>
+            </div>
+            <div class="poly-cat-pill">2 Ürün</div>
           </div>
-          <span class="product-cat-desc">Dikey yüzeylerde akmaz · Düşük stiren emisyonu</span>
         </div>
 
         <!-- 1.1 Ortoftalik Tiksotropik -->
@@ -140,16 +146,16 @@
           <div class="product-card-visual visual-tikso-orto">
             <div class="product-card-badge">Tiksotropik · Ortoftalik</div>
             <svg class="card-icon" viewBox="0 0 64 64" fill="none">
-              <!-- Dalgalı akışkan efekti -->
-              <path d="M10 44 Q22 34 32 40 Q42 46 54 36" stroke="#0066FF" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-              <path d="M10 52 Q22 42 32 48 Q42 54 54 44" stroke="#0066FF" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
-              <path d="M10 36 Q22 26 32 32 Q42 38 54 28" stroke="#0066FF" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.4"/>
-              <circle cx="32" cy="22" r="10" stroke="#0066FF" stroke-width="2" fill="rgba(0,102,255,0.1)"/>
-              <path d="M28 22 Q32 18 36 22" stroke="#0066FF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-              <circle cx="32" cy="24" r="3" fill="#0066FF" opacity="0.7"/>
+              <path d="M8 46 C16 40 24 50 32 44 C40 38 48 48 56 42" stroke="rgba(59,130,246,0.9)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <path d="M8 52 C16 46 24 56 32 50 C40 44 48 54 56 48" stroke="rgba(59,130,246,0.55)" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M8 40 C16 34 24 44 32 38 C40 32 48 42 56 36" stroke="rgba(59,130,246,0.32)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <rect x="20" y="10" width="24" height="24" rx="4" fill="rgba(59,130,246,0.12)" stroke="rgba(59,130,246,0.5)" stroke-width="1.5"/>
+              <path d="M30 34 Q32 40 34 34" stroke="rgba(59,130,246,0.7)" stroke-width="2" fill="rgba(59,130,246,0.15)" stroke-linecap="round"/>
+              <circle cx="32" cy="21" r="5" fill="rgba(59,130,246,0.2)" stroke="rgba(59,130,246,0.65)" stroke-width="1.2"/>
             </svg>
           </div>
           <div class="product-card-body">
+            <span class="stock-indicator"><span class="stock-pulse"></span>Stokta Mevcut</span>
             <div class="product-card-title">Ortoftalik Tiksotropik Polyester</div>
             <p class="product-card-desc">İyi mekanik özellikler, düşük stiren emisyonu. Dikey yüzeylerde akmaz — otomotiv kabinleri ve yat gövdelerinde tercih edilen tiksotropik sistem.</p>
             <table class="tech-specs-table">
@@ -171,7 +177,7 @@
             </div>
             <div class="product-card-actions">
               <a href="iletisim.html" class="btn btn-outline-blue btn-sm">
-                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" style="margin-right:4px"><path d="M6.5 1v8M3 5l3.5 4L10 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="1" y="10" width="11" height="2" rx="1" fill="currentColor"/></svg>
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" style="margin-right:4px"><path d="M6.5 1v7.5M3.5 6l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="1" y="10" width="11" height="2" rx="1" fill="currentColor"/></svg>
                 TDS İndir
               </a>
               <a href="iletisim.html" class="btn btn-orange btn-sm">Teklif Al</a>
@@ -179,19 +185,20 @@
           </div>
         </div>
 
-        <!-- 1.2 İzoftalik Tiksotropik Kimyasal Dayanımlı -->
+        <!-- 1.2 İzoftalik Tiksotropik -->
         <div class="product-card fade-in stagger-2" data-category="polyester">
           <div class="product-card-visual visual-tikso-iso">
             <div class="product-card-badge">Tiksotropik · İzoftalik</div>
             <svg class="card-icon" viewBox="0 0 64 64" fill="none">
-              <path d="M10 46 Q22 36 32 42 Q42 48 54 38" stroke="#0099FF" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-              <path d="M10 54 Q22 44 32 50 Q42 56 54 46" stroke="#0099FF" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
-              <path d="M10 38 Q22 28 32 34 Q42 40 54 30" stroke="#0099FF" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.35"/>
-              <rect x="22" y="10" width="20" height="20" rx="5" stroke="#0099FF" stroke-width="2" fill="rgba(0,153,255,0.12)"/>
-              <path d="M27 20 h10 M32 15 v10" stroke="#0099FF" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M8 46 C16 40 24 50 32 44 C40 38 48 48 56 42" stroke="rgba(99,179,255,0.9)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <path d="M8 52 C16 46 24 56 32 50 C40 44 48 54 56 48" stroke="rgba(99,179,255,0.5)" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M8 40 C16 34 24 44 32 38 C40 32 48 42 56 36" stroke="rgba(99,179,255,0.3)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <path d="M24 12 L32 9 L40 12 L40 22 Q32 28 24 22 Z" fill="rgba(99,179,255,0.15)" stroke="rgba(99,179,255,0.7)" stroke-width="1.5"/>
+              <path d="M28 19 L31 22 L36 16" stroke="rgba(99,179,255,0.95)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
           <div class="product-card-body">
+            <span class="stock-indicator"><span class="stock-pulse"></span>Stokta Mevcut</span>
             <div class="product-card-title">İzoftalik Tiksotropik Kimyasal Dayanımlı Polyester</div>
             <span class="approval-badge">✓ Lloyd's Register Onaylı</span>
             <p class="product-card-desc">Yüksek sıcaklık ve kimyasal dayanım. El yatırması ve püskürtme ile işlenebilen, tüp ve tanklarda yüksek performans sergileyen izoftalik tiksotropik sistem.</p>
@@ -212,19 +219,26 @@
               <span class="product-tag">Deniz Uygulaması</span>
             </div>
             <div class="product-card-actions">
-              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">TDS İndir</a>
+              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" style="margin-right:4px"><path d="M6.5 1v7.5M3.5 6l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="1" y="10" width="11" height="2" rx="1" fill="currentColor"/></svg>
+                TDS İndir
+              </a>
               <a href="iletisim.html" class="btn btn-orange btn-sm">Teklif Al</a>
             </div>
           </div>
         </div>
 
         <!-- ── KATEGORİ 2: DÖKÜM TİPİ POLİESTERLER ── -->
-        <div class="product-category-header fade-in" data-category="polyester" style="display:flex;">
-          <div class="product-cat-number" style="background:var(--color-accent-orange);">2</div>
-          <div>
-            <div class="product-cat-title">Döküm Tipi <span style="color:var(--color-accent-orange)">Polyesterler</span></div>
+        <div class="poly-cat-banner poly-cat-2 fade-in" data-category="polyester">
+          <div class="poly-cat-banner-bg"></div>
+          <div class="poly-cat-banner-inner">
+            <div class="poly-cat-num">02</div>
+            <div class="poly-cat-texts">
+              <div class="poly-cat-name">Döküm Tipi Polyesterler</div>
+              <div class="poly-cat-sub">Berrak bal rengi · Yüksek dolgu kapasitesi · Mermer, Küvet &amp; Mutfak Tezgahı uygulamaları</div>
+            </div>
+            <div class="poly-cat-pill">2 Ürün</div>
           </div>
-          <span class="product-cat-desc">Mermer · Küvet · Mutfak Tezgahı</span>
         </div>
 
         <!-- 2.1 Ortoftalik-Tereftalik Döküm -->
@@ -232,16 +246,16 @@
           <div class="product-card-visual visual-dokum-orto">
             <div class="product-card-badge">Döküm · Orto-Tere</div>
             <svg class="card-icon" viewBox="0 0 64 64" fill="none">
-              <!-- Mermer doku efekti -->
-              <rect x="10" y="10" width="44" height="44" rx="6" fill="rgba(210,160,80,0.08)" stroke="rgba(210,160,80,0.4)" stroke-width="1.5"/>
-              <path d="M14 22 Q24 18 30 26 Q36 34 46 28" stroke="rgba(210,160,80,0.6)" stroke-width="1.5" fill="none"/>
-              <path d="M18 34 Q28 30 34 38 Q40 46 50 40" stroke="rgba(210,160,80,0.4)" stroke-width="1" fill="none"/>
-              <path d="M12 44 Q20 40 26 46 Q32 52 42 48" stroke="rgba(210,160,80,0.5)" stroke-width="1" fill="none"/>
-              <ellipse cx="32" cy="32" rx="12" ry="8" fill="rgba(210,160,80,0.15)" stroke="rgba(210,160,80,0.5)" stroke-width="1"/>
-              <text x="26" y="36" font-size="8" fill="rgba(210,160,80,0.8)" font-family="monospace">BAL</text>
+              <rect x="12" y="38" width="40" height="18" rx="3" fill="rgba(210,160,55,0.12)" stroke="rgba(210,160,55,0.5)" stroke-width="1.5"/>
+              <path d="M24 10 L30 10 L30 38 Q27 44 24 38 Z" fill="rgba(210,160,55,0.2)" stroke="rgba(210,160,55,0.6)" stroke-width="1.2"/>
+              <path d="M27 36 Q27.5 42 28 47" stroke="rgba(210,160,55,0.85)" stroke-width="2.5" stroke-linecap="round"/>
+              <ellipse cx="32" cy="48" rx="15" ry="3" fill="rgba(210,160,55,0.2)" stroke="rgba(210,160,55,0.4)" stroke-width="1"/>
+              <path d="M16 50 Q22 47 28 50 Q34 53 40 50" stroke="rgba(255,200,80,0.3)" stroke-width="0.8" fill="none"/>
+              <path d="M16 54 Q24 51 32 54 Q40 57 48 54" stroke="rgba(255,200,80,0.2)" stroke-width="0.8" fill="none"/>
             </svg>
           </div>
           <div class="product-card-body">
+            <span class="stock-indicator"><span class="stock-pulse"></span>Stokta Mevcut</span>
             <div class="product-card-title">Ortoftalik-Tereftalik Döküm Polyester</div>
             <p class="product-card-desc">Esnek yapısı ve yüksek dolgu kapasitesiyle berrak bal rengi sunan döküm reçinesi. Mermer, küvet ve mutfak tezgahlarında doğal taş görünümü verir.</p>
             <table class="tech-specs-table">
@@ -262,7 +276,10 @@
               <span class="product-tag">Süs Eşyası</span>
             </div>
             <div class="product-card-actions">
-              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">TDS İndir</a>
+              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" style="margin-right:4px"><path d="M6.5 1v7.5M3.5 6l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="1" y="10" width="11" height="2" rx="1" fill="currentColor"/></svg>
+                TDS İndir
+              </a>
               <a href="iletisim.html" class="btn btn-orange btn-sm">Teklif Al</a>
             </div>
           </div>
@@ -273,15 +290,16 @@
           <div class="product-card-visual visual-dokum-iso">
             <div class="product-card-badge">Döküm · Masif Yüzey</div>
             <svg class="card-icon" viewBox="0 0 64 64" fill="none">
-              <rect x="10" y="10" width="44" height="44" rx="6" fill="rgba(180,140,60,0.08)" stroke="rgba(180,140,60,0.4)" stroke-width="1.5"/>
-              <path d="M16 20 Q26 16 32 24 Q38 32 48 26" stroke="rgba(180,140,60,0.7)" stroke-width="2" fill="none"/>
-              <path d="M14 32 Q24 28 30 36 Q36 44 46 38" stroke="rgba(180,140,60,0.4)" stroke-width="1.5" fill="none"/>
-              <path d="M18 44 Q28 40 34 46 Q40 52 50 46" stroke="rgba(180,140,60,0.5)" stroke-width="1" fill="none"/>
-              <circle cx="32" cy="32" r="9" fill="rgba(180,140,60,0.12)" stroke="rgba(180,140,60,0.5)" stroke-width="1.5"/>
-              <path d="M28 32 h8 M32 28 v8" stroke="rgba(180,140,60,0.7)" stroke-width="1.5" stroke-linecap="round"/>
+              <rect x="12" y="36" width="40" height="20" rx="3" fill="rgba(195,145,45,0.12)" stroke="rgba(195,145,45,0.5)" stroke-width="1.5"/>
+              <path d="M22 10 L28 10 L28 36 Q25 42 22 36 Z" fill="rgba(195,145,45,0.2)" stroke="rgba(195,145,45,0.6)" stroke-width="1.2"/>
+              <path d="M25 34 Q25.5 40 26 46" stroke="rgba(195,145,45,0.85)" stroke-width="2.5" stroke-linecap="round"/>
+              <ellipse cx="32" cy="47" rx="15" ry="3" fill="rgba(195,145,45,0.18)" stroke="rgba(195,145,45,0.4)" stroke-width="1"/>
+              <path d="M44 12 L48 8 M44 16 L50 16 M44 20 L48 24" stroke="rgba(245,190,60,0.55)" stroke-width="1.2" stroke-linecap="round"/>
+              <circle cx="40" cy="16" r="5" fill="rgba(245,190,60,0.12)" stroke="rgba(245,190,60,0.45)" stroke-width="1.2"/>
             </svg>
           </div>
           <div class="product-card-body">
+            <span class="stock-indicator"><span class="stock-pulse"></span>Stokta Mevcut</span>
             <div class="product-card-title">İzoftalik Masif Yüzey Döküm Polyester</div>
             <p class="product-card-desc">Yüksek UV, kimyasal ve ısı dayanımıyla premium döküm uygulamaları için geliştirilmiş izoftalik sistem. Banyo ve mutfak yüzeylerinde uzun ömür sağlar.</p>
             <table class="tech-specs-table">
@@ -300,19 +318,26 @@
               <span class="product-tag">Döküm Ürünler</span>
             </div>
             <div class="product-card-actions">
-              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">TDS İndir</a>
+              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" style="margin-right:4px"><path d="M6.5 1v7.5M3.5 6l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="1" y="10" width="11" height="2" rx="1" fill="currentColor"/></svg>
+                TDS İndir
+              </a>
               <a href="iletisim.html" class="btn btn-orange btn-sm">Teklif Al</a>
             </div>
           </div>
         </div>
 
         <!-- ── KATEGORİ 3: GENEL AMAÇLI POLİESTERLER (CTP) ── -->
-        <div class="product-category-header fade-in" data-category="polyester" style="display:flex;">
-          <div class="product-cat-number" style="background:#0EA5E9;">3</div>
-          <div>
-            <div class="product-cat-title">Genel Amaçlı <span style="color:#0EA5E9;">Polyesterler (CTP)</span></div>
+        <div class="poly-cat-banner poly-cat-3 fade-in" data-category="polyester">
+          <div class="poly-cat-banner-bg"></div>
+          <div class="poly-cat-banner-inner">
+            <div class="poly-cat-num">03</div>
+            <div class="poly-cat-texts">
+              <div class="poly-cat-name">Genel Amaçlı Polyesterler (CTP)</div>
+              <div class="poly-cat-sub">Geniş kullanım alanı · Su deposu, tekne, CTP ürünler · El Yatırması &amp; Püskürtme &amp; RTM</div>
+            </div>
+            <div class="poly-cat-pill">2 Ürün</div>
           </div>
-          <span class="product-cat-desc">Su Deposu · Tekne · CTP Ürünler</span>
         </div>
 
         <!-- 3.1 Ortoftalik Genel Amaçlı -->
@@ -320,13 +345,14 @@
           <div class="product-card-visual visual-genel-orto">
             <div class="product-card-badge">Genel Amaçlı · CTP</div>
             <svg class="card-icon" viewBox="0 0 64 64" fill="none">
-              <!-- Reçine damlası efekti -->
-              <path d="M32 10 Q44 26 44 36 Q44 50 32 54 Q20 50 20 36 Q20 26 32 10Z" fill="rgba(0,102,255,0.15)" stroke="#0066FF" stroke-width="2"/>
-              <path d="M32 18 Q40 28 40 36 Q40 46 32 49 Q24 46 24 36 Q24 28 32 18Z" fill="rgba(0,102,255,0.1)" stroke="#0066FF" stroke-width="1" opacity="0.7"/>
-              <ellipse cx="29" cy="34" rx="4" ry="6" fill="rgba(255,255,255,0.12)" transform="rotate(-20 29 34)"/>
+              <path d="M32 10 Q46 28 46 38 Q46 52 32 56 Q18 52 18 38 Q18 28 32 10Z" fill="rgba(0,102,255,0.14)" stroke="rgba(0,130,255,0.7)" stroke-width="2"/>
+              <path d="M32 18 Q42 30 42 38 Q42 48 32 51 Q22 48 22 38 Q22 30 32 18Z" fill="rgba(0,102,255,0.08)" stroke="rgba(0,130,255,0.32)" stroke-width="1"/>
+              <ellipse cx="27" cy="30" rx="4" ry="7" fill="rgba(255,255,255,0.12)" transform="rotate(-22 27 30)"/>
+              <ellipse cx="32" cy="50" rx="8" ry="2" fill="rgba(0,102,255,0.14)"/>
             </svg>
           </div>
           <div class="product-card-body">
+            <span class="stock-indicator"><span class="stock-pulse"></span>Stokta Mevcut</span>
             <div class="product-card-title">Ortoftalik Genel Amaçlı Polyester</div>
             <p class="product-card-desc">Orta reaktivite, düşük viskozite ve iyi elyaf ıslatma özelliğiyle geniş kullanım alanına sahip CTP reçinesi. Düşük hacimsel çekme ile boyutsal kararlılık sağlar.</p>
             <table class="tech-specs-table">
@@ -346,7 +372,10 @@
               <span class="product-tag">CTP Ürünler</span>
             </div>
             <div class="product-card-actions">
-              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">TDS İndir</a>
+              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" style="margin-right:4px"><path d="M6.5 1v7.5M3.5 6l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="1" y="10" width="11" height="2" rx="1" fill="currentColor"/></svg>
+                TDS İndir
+              </a>
               <a href="iletisim.html" class="btn btn-orange btn-sm">Teklif Al</a>
             </div>
           </div>
@@ -357,13 +386,15 @@
           <div class="product-card-visual visual-genel-iso">
             <div class="product-card-badge">İzo-NPG · Marin Tipi</div>
             <svg class="card-icon" viewBox="0 0 64 64" fill="none">
-              <path d="M32 10 Q46 28 46 38 Q46 52 32 56 Q18 52 18 38 Q18 28 32 10Z" fill="rgba(0,153,255,0.15)" stroke="#0099FF" stroke-width="2"/>
-              <path d="M32 20 Q42 30 42 38 Q42 48 32 51 Q22 48 22 38 Q22 30 32 20Z" fill="rgba(0,153,255,0.1)" stroke="#0099FF" stroke-width="1" opacity="0.8"/>
-              <path d="M26 24 Q30 20 34 24" stroke="#0099FF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-              <ellipse cx="28" cy="35" rx="4" ry="7" fill="rgba(255,255,255,0.1)" transform="rotate(-15 28 35)"/>
+              <path d="M10 44 Q18 56 32 58 Q46 56 54 44 L50 36 Q32 28 14 36 Z" fill="rgba(0,140,255,0.14)" stroke="rgba(0,150,255,0.6)" stroke-width="1.5"/>
+              <path d="M10 44 C18 40 26 48 34 44 C42 40 50 46 54 44" stroke="rgba(0,160,255,0.5)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <path d="M8 52 C16 48 24 56 32 52 C40 48 48 56 56 52" stroke="rgba(0,150,255,0.28)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+              <line x1="32" y1="10" x2="32" y2="36" stroke="rgba(0,140,255,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M32 14 L44 22 L32 24 Z" fill="rgba(0,140,255,0.15)" stroke="rgba(0,140,255,0.4)" stroke-width="1"/>
             </svg>
           </div>
           <div class="product-card-body">
+            <span class="stock-indicator"><span class="stock-pulse"></span>Stokta Mevcut</span>
             <div class="product-card-title">İzoftalik / ISO-NPG Marin Tipi Polyester</div>
             <span class="approval-badge">✓ Lloyd's Register Onaylı</span>
             <p class="product-card-desc">Üstün su ve kimyasal direnç, yüksek mekanik değerler. Tekne, yat ve katamaran gövdelerinin iç ve dış laminasyonunda sektörün tercihi.</p>
@@ -386,19 +417,26 @@
               <span class="product-tag">Deniz</span>
             </div>
             <div class="product-card-actions">
-              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">TDS İndir</a>
+              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" style="margin-right:4px"><path d="M6.5 1v7.5M3.5 6l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="1" y="10" width="11" height="2" rx="1" fill="currentColor"/></svg>
+                TDS İndir
+              </a>
               <a href="iletisim.html" class="btn btn-orange btn-sm">Teklif Al</a>
             </div>
           </div>
         </div>
 
         <!-- ── KATEGORİ 4: BORU & TANK TİPİ POLİESTERLER ── -->
-        <div class="product-category-header fade-in" data-category="polyester" style="display:flex;">
-          <div class="product-cat-number" style="background:#6B7280;">4</div>
-          <div>
-            <div class="product-cat-title">Boru &amp; Tank Tipi <span style="color:#9CA3AF;">Polyesterler</span></div>
+        <div class="poly-cat-banner poly-cat-4 fade-in" data-category="polyester">
+          <div class="poly-cat-banner-bg"></div>
+          <div class="poly-cat-banner-inner">
+            <div class="poly-cat-num">04</div>
+            <div class="poly-cat-texts">
+              <div class="poly-cat-name">Boru &amp; Tank Tipi Polyesterler</div>
+              <div class="poly-cat-sub">Fitil sarma &amp; el yatırması · CTP boru, kimyasal tank, su/gıda deposu uygulamaları</div>
+            </div>
+            <div class="poly-cat-pill">2 Ürün</div>
           </div>
-          <span class="product-cat-desc">Fitil Sarma · CTP Boru · Kimyasal Tank</span>
         </div>
 
         <!-- 4.1 Ortoftalik Fitil Sarma -->
@@ -406,18 +444,17 @@
           <div class="product-card-visual visual-boru-orto">
             <div class="product-card-badge">Boru &amp; Tank · Ortoftalik</div>
             <svg class="card-icon" viewBox="0 0 64 64" fill="none">
-              <!-- Silindirik boru efekti -->
-              <ellipse cx="32" cy="18" rx="18" ry="7" fill="rgba(160,160,160,0.1)" stroke="rgba(160,160,160,0.5)" stroke-width="1.5"/>
-              <rect x="14" y="18" width="36" height="28" fill="rgba(160,160,160,0.08)" stroke="rgba(160,160,160,0.4)" stroke-width="1.5"/>
-              <ellipse cx="32" cy="46" rx="18" ry="7" fill="rgba(160,160,160,0.15)" stroke="rgba(160,160,160,0.5)" stroke-width="1.5"/>
-              <!-- Sarma çizgisi -->
-              <path d="M14 24 Q32 20 50 24" stroke="rgba(160,160,160,0.3)" stroke-width="1" fill="none"/>
-              <path d="M14 30 Q32 26 50 30" stroke="rgba(160,160,160,0.3)" stroke-width="1" fill="none"/>
-              <path d="M14 36 Q32 32 50 36" stroke="rgba(160,160,160,0.3)" stroke-width="1" fill="none"/>
-              <path d="M14 42 Q32 38 50 42" stroke="rgba(160,160,160,0.3)" stroke-width="1" fill="none"/>
+              <ellipse cx="32" cy="18" rx="20" ry="8" fill="rgba(148,163,184,0.1)" stroke="rgba(148,163,184,0.55)" stroke-width="1.8"/>
+              <rect x="12" y="18" width="40" height="28" fill="rgba(148,163,184,0.06)" stroke="rgba(148,163,184,0.4)" stroke-width="1.8"/>
+              <ellipse cx="32" cy="46" rx="20" ry="8" fill="rgba(148,163,184,0.14)" stroke="rgba(148,163,184,0.55)" stroke-width="1.8"/>
+              <path d="M12 24 Q32 20 52 24" stroke="rgba(148,163,184,0.28)" stroke-width="1" fill="none" stroke-dasharray="3 3"/>
+              <path d="M12 30 Q32 26 52 30" stroke="rgba(148,163,184,0.28)" stroke-width="1" fill="none" stroke-dasharray="3 3"/>
+              <path d="M12 36 Q32 32 52 36" stroke="rgba(148,163,184,0.28)" stroke-width="1" fill="none" stroke-dasharray="3 3"/>
+              <path d="M12 42 Q32 38 52 42" stroke="rgba(148,163,184,0.28)" stroke-width="1" fill="none" stroke-dasharray="3 3"/>
             </svg>
           </div>
           <div class="product-card-body">
+            <span class="stock-indicator"><span class="stock-pulse"></span>Stokta Mevcut</span>
             <div class="product-card-title">Ortoftalik Fitil Sarma Polyester</div>
             <p class="product-card-desc">Tiksotropiksiz, orta reaktif formülasyon. Yüksek elyaf ıslatma özelliğiyle fitil sarma makinelerinde kesintisiz üretim için optimize edilmiştir.</p>
             <table class="tech-specs-table">
@@ -436,7 +473,10 @@
               <span class="product-tag">Silindirik Yapı</span>
             </div>
             <div class="product-card-actions">
-              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">TDS İndir</a>
+              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" style="margin-right:4px"><path d="M6.5 1v7.5M3.5 6l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="1" y="10" width="11" height="2" rx="1" fill="currentColor"/></svg>
+                TDS İndir
+              </a>
               <a href="iletisim.html" class="btn btn-orange btn-sm">Teklif Al</a>
             </div>
           </div>
@@ -447,17 +487,15 @@
           <div class="product-card-visual visual-boru-iso">
             <div class="product-card-badge">Tank · İzoftalik</div>
             <svg class="card-icon" viewBox="0 0 64 64" fill="none">
-              <ellipse cx="32" cy="16" rx="18" ry="6" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.4)" stroke-width="1.5"/>
-              <rect x="14" y="16" width="36" height="32" fill="rgba(34,197,94,0.06)" stroke="rgba(34,197,94,0.35)" stroke-width="1.5"/>
-              <ellipse cx="32" cy="48" rx="18" ry="6" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.4)" stroke-width="1.5"/>
-              <path d="M14 24 Q32 20 50 24" stroke="rgba(34,197,94,0.25)" stroke-width="1" fill="none"/>
-              <path d="M14 32 Q32 28 50 32" stroke="rgba(34,197,94,0.25)" stroke-width="1" fill="none"/>
-              <path d="M14 40 Q32 36 50 40" stroke="rgba(34,197,94,0.25)" stroke-width="1" fill="none"/>
-              <!-- Kimyasal direnci simgeleyen kalkan -->
-              <path d="M26 26 L32 22 L38 26 L38 34 Q32 38 26 34 Z" stroke="rgba(34,197,94,0.6)" stroke-width="1.5" fill="rgba(34,197,94,0.1)"/>
+              <ellipse cx="32" cy="14" rx="20" ry="7" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.5)" stroke-width="1.8"/>
+              <rect x="12" y="14" width="40" height="34" fill="rgba(34,197,94,0.06)" stroke="rgba(34,197,94,0.4)" stroke-width="1.8"/>
+              <ellipse cx="32" cy="48" rx="20" ry="7" fill="rgba(34,197,94,0.14)" stroke="rgba(34,197,94,0.5)" stroke-width="1.8"/>
+              <path d="M24 22 L32 18 L40 22 L40 34 Q32 40 24 34 Z" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.6)" stroke-width="1.5"/>
+              <path d="M28 30 L31 33 L37 26" stroke="rgba(34,197,94,0.95)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
           <div class="product-card-body">
+            <span class="stock-indicator"><span class="stock-pulse"></span>Stokta Mevcut</span>
             <div class="product-card-title">İzoftalik Kimyasal Dayanımlı Tank Polyester</div>
             <p class="product-card-desc">Asit ve alkali direnci, yüksek mekanik özellikler. Kimyasal tanklar, fuel oil depoları, su ve gıda depolarında güvenle kullanılır.</p>
             <table class="tech-specs-table">
@@ -478,19 +516,26 @@
               <span class="product-tag">Gıda Deposu</span>
             </div>
             <div class="product-card-actions">
-              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">TDS İndir</a>
+              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" style="margin-right:4px"><path d="M6.5 1v7.5M3.5 6l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="1" y="10" width="11" height="2" rx="1" fill="currentColor"/></svg>
+                TDS İndir
+              </a>
               <a href="iletisim.html" class="btn btn-orange btn-sm">Teklif Al</a>
             </div>
           </div>
         </div>
 
         <!-- ── KATEGORİ 5: VİNİLESTER REÇİNELER ── -->
-        <div class="product-category-header fade-in" data-category="polyester" style="display:flex;">
-          <div class="product-cat-number" style="background:#7C3AED;">5</div>
-          <div>
-            <div class="product-cat-title">Vinilester <span style="color:#A78BFA;">Reçineler</span></div>
+        <div class="poly-cat-banner poly-cat-5 fade-in" data-category="polyester">
+          <div class="poly-cat-banner-bg"></div>
+          <div class="poly-cat-banner-inner">
+            <div class="poly-cat-num">05</div>
+            <div class="poly-cat-texts">
+              <div class="poly-cat-name">Vinilester Reçineler</div>
+              <div class="poly-cat-sub">Epoksi bazlı · Maksimum kimyasal &amp; mekanik performans · Endüstriyel uygulamalar</div>
+            </div>
+            <div class="poly-cat-pill">1 Ürün</div>
           </div>
-          <span class="product-cat-desc">Epoksi bazlı · Maksimum kimyasal dayanım</span>
         </div>
 
         <!-- 5.1 Standart Vinilester -->
@@ -498,23 +543,24 @@
           <div class="product-card-visual visual-vinilester-std">
             <div class="product-card-badge">Vinilester · Standart</div>
             <svg class="card-icon" viewBox="0 0 64 64" fill="none">
-              <!-- Molekül efekti -->
-              <circle cx="32" cy="32" r="7" fill="rgba(167,139,250,0.25)" stroke="#A78BFA" stroke-width="2"/>
-              <circle cx="14" cy="22" r="4" fill="rgba(167,139,250,0.15)" stroke="#A78BFA" stroke-width="1.5"/>
-              <circle cx="50" cy="22" r="4" fill="rgba(167,139,250,0.15)" stroke="#A78BFA" stroke-width="1.5"/>
-              <circle cx="14" cy="42" r="4" fill="rgba(167,139,250,0.15)" stroke="#A78BFA" stroke-width="1.5"/>
-              <circle cx="50" cy="42" r="4" fill="rgba(167,139,250,0.15)" stroke="#A78BFA" stroke-width="1.5"/>
-              <circle cx="32" cy="12" r="3" fill="rgba(167,139,250,0.2)" stroke="#A78BFA" stroke-width="1.5"/>
-              <circle cx="32" cy="52" r="3" fill="rgba(167,139,250,0.2)" stroke="#A78BFA" stroke-width="1.5"/>
-              <line x1="32" y1="25" x2="32" y2="15" stroke="#A78BFA" stroke-width="1.5"/>
-              <line x1="32" y1="39" x2="32" y2="49" stroke="#A78BFA" stroke-width="1.5"/>
-              <line x1="25" y1="28" x2="18" y2="24" stroke="#A78BFA" stroke-width="1.5"/>
-              <line x1="39" y1="28" x2="46" y2="24" stroke="#A78BFA" stroke-width="1.5"/>
-              <line x1="25" y1="36" x2="18" y2="40" stroke="#A78BFA" stroke-width="1.5"/>
-              <line x1="39" y1="36" x2="46" y2="40" stroke="#A78BFA" stroke-width="1.5"/>
+              <circle cx="32" cy="32" r="8" fill="rgba(139,92,246,0.25)" stroke="#8B5CF6" stroke-width="2"/>
+              <circle cx="14" cy="22" r="5" fill="rgba(139,92,246,0.16)" stroke="#8B5CF6" stroke-width="1.5"/>
+              <circle cx="50" cy="22" r="5" fill="rgba(139,92,246,0.16)" stroke="#8B5CF6" stroke-width="1.5"/>
+              <circle cx="14" cy="42" r="5" fill="rgba(139,92,246,0.16)" stroke="#8B5CF6" stroke-width="1.5"/>
+              <circle cx="50" cy="42" r="5" fill="rgba(139,92,246,0.16)" stroke="#8B5CF6" stroke-width="1.5"/>
+              <circle cx="32" cy="10" r="3.5" fill="rgba(139,92,246,0.2)" stroke="#8B5CF6" stroke-width="1.5"/>
+              <circle cx="32" cy="54" r="3.5" fill="rgba(139,92,246,0.2)" stroke="#8B5CF6" stroke-width="1.5"/>
+              <line x1="32" y1="24" x2="32" y2="13.5" stroke="#8B5CF6" stroke-width="1.5" opacity="0.7"/>
+              <line x1="32" y1="40" x2="32" y2="50.5" stroke="#8B5CF6" stroke-width="1.5" opacity="0.7"/>
+              <line x1="24.5" y1="27.5" x2="19" y2="24" stroke="#8B5CF6" stroke-width="1.5" opacity="0.7"/>
+              <line x1="39.5" y1="27.5" x2="45" y2="24" stroke="#8B5CF6" stroke-width="1.5" opacity="0.7"/>
+              <line x1="24.5" y1="36.5" x2="19" y2="40" stroke="#8B5CF6" stroke-width="1.5" opacity="0.7"/>
+              <line x1="39.5" y1="36.5" x2="45" y2="40" stroke="#8B5CF6" stroke-width="1.5" opacity="0.7"/>
+              <line x1="28" y1="32" x2="36" y2="32" stroke="rgba(139,92,246,0.55)" stroke-width="3.5" stroke-linecap="round"/>
             </svg>
           </div>
           <div class="product-card-body">
+            <span class="stock-indicator"><span class="stock-pulse"></span>Stokta Mevcut</span>
             <div class="product-card-title">Standart Vinilester Reçine</div>
             <p class="product-card-desc">Epoksi bazlı yapısıyla polyester'in işlenebilirliğini epoksinin kimyasal ve mekanik üstünlüğüyle birleştirir. Endüstriyel ekipman ve yüksek performanslı kompozitlerde birinci tercih.</p>
             <table class="tech-specs-table">
@@ -536,7 +582,10 @@
               <span class="product-tag">Yüksek Performans</span>
             </div>
             <div class="product-card-actions">
-              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">TDS İndir</a>
+              <a href="iletisim.html" class="btn btn-outline-blue btn-sm">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" style="margin-right:4px"><path d="M6.5 1v7.5M3.5 6l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="1" y="10" width="11" height="2" rx="1" fill="currentColor"/></svg>
+                TDS İndir
+              </a>
               <a href="iletisim.html" class="btn btn-orange btn-sm">Teklif Al</a>
             </div>
           </div>
