@@ -2709,3 +2709,42 @@ textarea.form-control {
   .poly-cat-num { font-size: 2rem; min-width: 44px; }
   .poly-cat-banner-inner { padding: 14px 18px; gap: 14px; }
 }
+
+/* ============================================================
+   REAL PHOTO CARD VISUALS
+   ============================================================ */
+.product-card-visual.has-photo {
+  background: #080C18 !important;
+}
+
+.card-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.8;
+  transition: transform 0.45s ease, opacity 0.3s ease;
+}
+
+.product-card:hover .card-photo {
+  transform: scale(1.06);
+  opacity: 0.6;
+}
+
+.photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0.1) 0%,
+    rgba(6,10,24,0.62) 100%
+  );
+  z-index: 1;
+}
+
+.product-card-badge { position: relative; z-index: 2; }
+
+/* Hide SVG icons when real photo is present */
+.has-photo .card-icon { display: none; }
