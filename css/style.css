@@ -3053,3 +3053,421 @@ textarea.form-control {
     radial-gradient(ellipse 40% 30% at 80% 20%, rgba(0,150,180,0.14) 0%, transparent 55%),
     linear-gradient(155deg, #020B0E 0%, #04141A 55%, #020B0E 100%);
 }
+
+/* ============================================================
+   GERÇEK ÜRÜN FOTOĞRAFLARI — Global Override
+   Tüm soyut SVG ikonlar ve animasyonlu arka planlar
+   gerçek ürün fotoğraflarıyla değiştirilmiştir.
+   ============================================================ */
+
+/* Soyut SVG ikonları gizle — fotoğraflar onların yerini alıyor */
+.product-card-visual .card-icon {
+  display: none !important;
+}
+
+/* Hero soyut yüzen şekilleri gizle */
+.hero-shapes {
+  display: none !important;
+}
+
+/* Tüm visual pseudo-elementleri fotoğraf üstü overlay'e dönüştür */
+[class*="visual-"]::before {
+  content: '' !important;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important; left: 0 !important;
+  bottom: 0 !important; right: 0 !important;
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  animation: none !important;
+  transform: none !important;
+  background: linear-gradient(
+    to bottom,
+    rgba(5, 10, 20, 0.18) 0%,
+    rgba(5, 10, 20, 0.48) 100%
+  ) !important;
+  z-index: 1 !important;
+}
+
+[class*="visual-"]::after {
+  display: none !important;
+}
+
+/* ============================================================
+   HERO — Gerçek Fotoğraf
+   Fiberglas tekne üretimi / marine composite sahne
+   ============================================================ */
+.hero-bg {
+  background:
+    linear-gradient(
+      105deg,
+      rgba(10, 14, 26, 0.90) 0%,
+      rgba(10, 14, 26, 0.65) 52%,
+      rgba(10, 14, 26, 0.38) 100%
+    ),
+    url('https://images.unsplash.com/photo-1605281317010-fe5ffe798166?auto=format&fit=crop&w=1920&q=80')
+    center / cover no-repeat !important;
+  animation: none !important;
+}
+
+/* Hero grid çizgilerini hafif tut — fotoğraf üstünde şık duruyor */
+.hero::before {
+  opacity: 0.4 !important;
+}
+
+/* ============================================================
+   INDEX — Öne Çıkan Ürün Kartları
+   ============================================================ */
+
+/* Genel Amaçlı Polyester Reçine — sıvı reçine/kimyasal */
+.visual-polyester {
+  background:
+    linear-gradient(160deg, rgba(6, 14, 28, 0.75) 0%, rgba(10, 26, 54, 0.58) 100%),
+    url('https://images.unsplash.com/photo-1532187643603-ba119ca4109e?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Izopothalik Polyester — endüstriyel kimyasal depolama */
+.visual-polyester-iso {
+  background:
+    linear-gradient(160deg, rgba(8, 16, 30, 0.75) 0%, rgba(10, 32, 48, 0.58) 100%),
+    url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Cam Elyaf Doku (Woven Roving) — örgü fiber doku */
+.visual-woven {
+  background:
+    linear-gradient(160deg, rgba(6, 16, 8, 0.72) 0%, rgba(10, 30, 14, 0.55) 100%),
+    url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Standart Epoksi Reçine — endüstriyel kaplama/imalat */
+.visual-epoksi {
+  background:
+    linear-gradient(160deg, rgba(20, 6, 6, 0.72) 0%, rgba(36, 10, 10, 0.55) 100%),
+    url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Beyaz Jelkot — parlak beyaz tekne gövdesi */
+.visual-jelkot-beyaz {
+  background:
+    linear-gradient(160deg, rgba(14, 14, 18, 0.60) 0%, rgba(22, 22, 30, 0.45) 100%),
+    url('https://images.unsplash.com/photo-1567789884554-0d27f4b93816?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Epoksi İnfüzyon Sistemi — vakum infüzyon / rüzgar türbini */
+.visual-infuzyon {
+  background:
+    linear-gradient(160deg, rgba(14, 14, 6, 0.72) 0%, rgba(22, 22, 8, 0.55) 100%),
+    url('https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* ============================================================
+   ÜRÜNLER SAYFASI — Genişletilmiş Kartlar
+   ============================================================ */
+
+/* Tiksotropik Polyester Orto */
+.visual-tikso-orto {
+  background:
+    linear-gradient(160deg, rgba(2, 10, 24, 0.75) 0%, rgba(4, 16, 40, 0.58) 100%),
+    url('https://images.unsplash.com/photo-1532187643603-ba119ca4109e?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Tiksotropik Polyester Iso */
+.visual-tikso-iso {
+  background:
+    linear-gradient(160deg, rgba(2, 12, 28, 0.75) 0%, rgba(4, 18, 44, 0.58) 100%),
+    url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Döküm Tipi Polyester Orto — amber reçine döküm */
+.visual-dokum-orto {
+  background:
+    linear-gradient(168deg, rgba(24, 16, 4, 0.72) 0%, rgba(44, 26, 6, 0.55) 100%),
+    url('https://images.unsplash.com/photo-1565992441121-4367f2b50aa3?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Döküm Tipi Polyester Iso */
+.visual-dokum-iso {
+  background:
+    linear-gradient(168deg, rgba(18, 14, 8, 0.72) 0%, rgba(32, 22, 10, 0.55) 100%),
+    url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Genel CTP Polyester Orto */
+.visual-genel-orto {
+  background:
+    linear-gradient(175deg, rgba(2, 12, 24, 0.75) 0%, rgba(4, 16, 38, 0.58) 100%),
+    url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Genel CTP Polyester Iso */
+.visual-genel-iso {
+  background:
+    linear-gradient(175deg, rgba(2, 14, 28, 0.75) 0%, rgba(4, 18, 42, 0.58) 100%),
+    url('https://images.unsplash.com/photo-1532187643603-ba119ca4109e?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Boru & Tank Polyester Orto — endüstriyel boru/tank */
+.visual-boru-orto {
+  background:
+    linear-gradient(175deg, rgba(10, 12, 16, 0.72) 0%, rgba(18, 20, 26, 0.55) 100%),
+    url('https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Boru & Tank Polyester Iso */
+.visual-boru-iso {
+  background:
+    linear-gradient(175deg, rgba(8, 16, 12, 0.72) 0%, rgba(14, 26, 20, 0.55) 100%),
+    url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Vinilester Reçine — polimer/kimyasal */
+.visual-vinilester-std,
+.visual-vinilester {
+  background:
+    linear-gradient(175deg, rgba(10, 6, 22, 0.72) 0%, rgba(18, 12, 40, 0.55) 100%),
+    url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Cam Elyaf CSM Mat */
+.visual-csm {
+  background:
+    linear-gradient(155deg, rgba(16, 12, 4, 0.70) 0%, rgba(26, 20, 6, 0.53) 100%),
+    url('https://images.unsplash.com/photo-1614680376408-d2dd19b74d94?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* E-Glass Filament */
+.visual-eglass {
+  background:
+    linear-gradient(155deg, rgba(4, 8, 18, 0.68) 0%, rgba(8, 14, 32, 0.52) 100%),
+    url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Sertleştirici / Katalizör (MEKP) */
+.visual-sertlestirici {
+  background:
+    linear-gradient(135deg, rgba(4, 18, 18, 0.72) 0%, rgba(8, 30, 30, 0.55) 100%),
+    url('https://images.unsplash.com/photo-1628863353691-0071c8c1874c?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Renkli Jelkot — renkli tekne / yüzey kaplaması */
+.visual-jelkot-renkli {
+  background:
+    linear-gradient(158deg, rgba(8, 8, 14, 0.60) 0%, rgba(14, 14, 24, 0.45) 100%),
+    url('https://images.unsplash.com/photo-1622396481328-9b1b78cdd9fd?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Topkot — tekne bitirme / üst kat boya */
+.visual-topkot {
+  background:
+    linear-gradient(158deg, rgba(6, 12, 8, 0.65) 0%, rgba(10, 18, 12, 0.50) 100%),
+    url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+
+/* ============================================================
+   İÇ SAYFA HEADER — Gerçek Arka Plan Fotoğrafı
+   Tüm sayfalardaki .page-header bölümü
+   ============================================================ */
+.page-header {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(10, 14, 26, 0.88) 0%,
+      rgba(10, 14, 26, 0.72) 60%,
+      rgba(10, 14, 26, 0.92) 100%
+    ),
+    url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1600&q=80')
+    center / cover no-repeat !important;
+}
+
+
+/* ============================================================
+   UYGULAMA ALANLARI — Sektör İllüstrasyonları Gerçek Fotoğraf
+   ============================================================ */
+
+/* Soyut SVG çizimlerini gizle, konteyneri fotoğrafa hazırla */
+.app-illustration {
+  padding: 0 !important;
+  overflow: hidden !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.app-illustration svg {
+  display: none !important;
+}
+
+/* Denizcilik & Marin — fiberglas tekne üretimi */
+.app-marine {
+  background-image:
+    linear-gradient(135deg, rgba(10,22,40,0.22) 0%, rgba(10,14,26,0.18) 100%),
+    url('https://images.unsplash.com/photo-1567789884554-0d27f4b93816?auto=format&fit=crop&w=900&h=600&q=82') !important;
+}
+
+/* İnşaat & Yapı — endüstriyel boru / su deposu */
+.app-insaat {
+  background-image:
+    linear-gradient(135deg, rgba(26,18,10,0.22) 0%, rgba(20,12,6,0.18) 100%),
+    url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=900&h=600&q=82') !important;
+}
+
+/* Otomotiv & Ulaşım — otomotiv üretim tesisi */
+.app-oto {
+  background-image:
+    linear-gradient(135deg, rgba(26,10,10,0.22) 0%, rgba(20,6,6,0.18) 100%),
+    url('https://images.unsplash.com/photo-1617788157485-42e67a13bcf2?auto=format&fit=crop&w=900&h=600&q=82') !important;
+}
+
+/* Rüzgar & Enerji — rüzgar türbini tarlası */
+.app-ruzgar {
+  background-image:
+    linear-gradient(135deg, rgba(10,26,10,0.22) 0%, rgba(6,20,6,0.18) 100%),
+    url('https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=900&h=600&q=82') !important;
+}
+
+/* Havacılık & Savunma — uçak / havacılık endüstrisi */
+.app-hava {
+  background-image:
+    linear-gradient(135deg, rgba(14,10,26,0.22) 0%, rgba(10,6,20,0.18) 100%),
+    url('https://images.unsplash.com/photo-1436491865332-7a61d2539eed?auto=format&fit=crop&w=900&h=600&q=82') !important;
+}
+
+/* Spor & Rekreasyon — sörf / kompozit spor ekipmanları */
+.app-spor {
+  background-image:
+    linear-gradient(135deg, rgba(26,20,10,0.22) 0%, rgba(20,14,6,0.18) 100%),
+    url('https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=900&h=600&q=82') !important;
+}
+
+
+/* ============================================================
+   EKSİK & KISIK GÖRSEL DÜZELTMELERİ
+   ============================================================ */
+
+/* Kalıp Ayırma Macunu (Wax) — otomotiv cila / parlatma */
+.visual-macun {
+  background:
+    linear-gradient(135deg, rgba(8, 10, 16, 0.62) 0%, rgba(14, 16, 24, 0.48) 100%),
+    url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Stirenin Monomer — kimyasal solvent / reaktif madde */
+.visual-stiren {
+  background:
+    linear-gradient(135deg, rgba(4, 12, 20, 0.68) 0%, rgba(6, 18, 30, 0.52) 100%),
+    url('https://images.unsplash.com/photo-1532187643603-ba119ca4109e?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* --- Güvenilir URL düzeltmeleri --- */
+
+/* Döküm Polyester — endüstriyel sıvı döküm işlemi */
+.visual-dokum-orto {
+  background:
+    linear-gradient(168deg, rgba(24, 16, 4, 0.68) 0%, rgba(44, 26, 6, 0.52) 100%),
+    url('https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+.visual-dokum-iso {
+  background:
+    linear-gradient(168deg, rgba(18, 14, 8, 0.68) 0%, rgba(32, 22, 10, 0.52) 100%),
+    url('https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Cam Elyaf CSM Mat — fiber/dokuma malzeme */
+.visual-csm {
+  background:
+    linear-gradient(155deg, rgba(16, 12, 4, 0.65) 0%, rgba(26, 20, 6, 0.50) 100%),
+    url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* Beyaz Jelkot — marina / parlak yat yüzeyi (index + urunler) */
+.visual-jelkot-beyaz {
+  background:
+    linear-gradient(160deg, rgba(10, 12, 18, 0.55) 0%, rgba(18, 20, 30, 0.42) 100%),
+    url('https://images.unsplash.com/photo-1605281317010-fe5ffe798166?auto=format&fit=crop&w=800&h=300&q=80')
+    center / cover no-repeat !important;
+}
+
+/* App: Denizcilik — marine composite / tekne üretim */
+.app-marine {
+  background-image:
+    linear-gradient(135deg, rgba(6, 14, 26, 0.20) 0%, rgba(10, 18, 34, 0.15) 100%),
+    url('https://images.unsplash.com/photo-1605281317010-fe5ffe798166?auto=format&fit=crop&w=900&h=600&q=82') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* App: Otomotiv — otomotiv imalat / araç endüstrisi */
+.app-oto {
+  background-image:
+    linear-gradient(135deg, rgba(26, 10, 10, 0.20) 0%, rgba(34, 14, 14, 0.15) 100%),
+    url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&h=600&q=82') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* App: Havacılık — uçak / havacılık kompozit yapıları */
+.app-hava {
+  background-image:
+    linear-gradient(135deg, rgba(14, 8, 26, 0.20) 0%, rgba(18, 12, 34, 0.15) 100%),
+    url('https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=900&h=600&q=82') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* App: İnşaat — endüstriyel yapı / altyapı */
+.app-insaat {
+  background-image:
+    linear-gradient(135deg, rgba(26, 18, 10, 0.20) 0%, rgba(34, 24, 12, 0.15) 100%),
+    url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=900&h=600&q=82') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* App: Rüzgar Enerjisi — rüzgar türbini tarlası */
+.app-ruzgar {
+  background-image:
+    linear-gradient(135deg, rgba(10, 22, 10, 0.20) 0%, rgba(12, 28, 12, 0.15) 100%),
+    url('https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=900&h=600&q=82') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* App: Spor — sörf / kompozit spor ekipmanı */
+.app-spor {
+  background-image:
+    linear-gradient(135deg, rgba(26, 20, 8, 0.20) 0%, rgba(34, 26, 10, 0.15) 100%),
+    url('https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=900&h=600&q=82') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
